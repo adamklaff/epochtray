@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <ApplicationIcon>Assets/epochtray.ico</ApplicationIcon>
+    <Version>0.1.0</Version>
+    <AssemblyName>EpochTray</AssemblyName>
+    <Product>EpochTray</Product>
+    <Description>A fast Unix timestamp converter for the Windows notification area.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../EpochTray.Core/EpochTray.Core.csproj" />
+    <EmbeddedResource Include="Assets/epochtray.ico" />
+  </ItemGroup>
+</Project>
